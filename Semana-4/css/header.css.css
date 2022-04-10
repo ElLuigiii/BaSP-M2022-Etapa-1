@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_nav{
+    background-color: rgb(19, 157, 118);
+    display: flex;
+    border: solid yellow .5px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_nav a{
+    display: none;
+}
+.container_nav input {
+    display: none;
+}
+.div_sign_in{
+    border: solid black
+}
+.container_nav button {
+    height: 23px;
+    width: 90px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+} 
+
+
+

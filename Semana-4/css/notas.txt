@@ -1,0 +1,3 @@
+480 px para Mobile
+768px para Tablet
+1024px para Desktop
