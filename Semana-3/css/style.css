@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+       
+}
+nav{
+    background-color:  #49A37B;
+    width: 1728px;
+    height: 72px;
+    font-size: 20px;
+    
+}
+#menuIcon{
+    height: 42px;
+    width: 43px;
+    margin: 8px;
+}
+section{
+    display: inline-block;
+}
+.sectionNav{
+    width: 95%;
+}
+.tutorial {
+    vertical-align: bottom;
+    font-size: 24px;
+    
+}
+.btn-tutorial {
+    text-decoration: none;
+    margin-left: 12px;
+    color: black;
+    font-weight: bold;
+}
+#btn-1 {
+    /* border: solid black; */
+    border-right: solid black;
+    padding-right: 14px;
+}
+#input-search {
+    width: 519px;
+    margin-left: 63px;
+    height: 51px;
+    border-radius: 28px;
+    vertical-align: text-bottom;
+}
+#sectionSignIn {
+    width: 463px;
+    height: 50px;
+    margin-left: 104px;
+}
+.btn-nav {
+    height: 48px;
+    width: 190px;
+    margin-left: 38px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 24px;
+}
+/* barrita separadora llamada "SPACES"*/
+.spaces {
+    width: 189px;
+}
+/****** EStilos de menu lateral***********/
+#menu-desp{
+    background: linear-gradient(180deg, rgba(0,178,140,1) 0%, rgba(76,189,157,1) 73%, rgba(225,243,239,1) 100%);
+    width: 448px;
+    height: 1909px;
+}
+.main-1 {
+    
+    height: 400px;
+    width: 70%;
+    margin-left: 30px;
+}
+.main-1 a {
+   font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border-bottom: 2px solid #23212159;
+    margin-bottom: 37px; 
+}
+.main-1 ul li{
+    text-decoration: none;
+}
+#tittle-menu {
+    border-bottom: solid #dc3030bd;
+    font-size: 30px;
+    margin: 11px;
+    margin-bottom: 23px;
+}
+
+.main-2 {
+    
+    margin-left: 40px;
+    margin-top: 92px;
+    width: 336px;
+    height: 187px;
+}
+.main-2 section{
+    
+    width: 240px;
+    margin-bottom: 10px;
+    border-bottom:solid #dc3030bd;
+    font-size: 30px;
+}
+.main-2 p{
+    font-size: 22px;
+    font-weight: 100;
+}
+.main-3 {
+    
+    margin-left: 39px;
+    margin-top: 205px;
+    width: 270px;
+}
+.main-3 p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/***********SUBTITULO LISTO******************/
+.main-tittle{
+    width: auto;
+    display: inline-block;
+    
+}
+#img-logo{
+    height: 60px;
+    width: 60px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 25px;
+}
+.space{
+    width: 300px;
+    background-color: rgba(6, 106, 57, 0.497);
+    height: 12vw;
+}
+
+/*info present CON DESCRIPCIÓN DE LA EMPRESA  */
+#imagen-muestra {
+    width: 623px;
+    height: 308px;
+    margin-right: 55px;
+}
+
+.texto {
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: rgb(12, 12, 12);
+}
+.main-tittle{
+    width: 100%;
+}
+.contenedor-p{
+    width: 200px;
+}
+.info-present{
+    width: 890px;
+    margin-left: 50px;
+}
+/********************
+ ******************** MEDIDAS PARA UBICAR EL CONTAINER*************/
+/*
+                        MEDIDAS PARA UBICAR EL CONTAINER
+                        .container-1{
+                        
+
+                        ****************************/
+
+/********* PROPIEDADES DEL MENU DESPLEGABLE Y CONTENEDOR DEL MAIN */
+.container-1{
+    width: 70%;
+    position: absolute;
+    top: 74px;
+    right: 0px
+}
+
+main{
+    display: inline-block;
+}
+
+/*************************          *****************/
+
+/* IMAGENES CARD Y CONTENEDOR*/ 
+.card {
+    width: 108px;
+    border: solid 2px grey;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 25px;
+    height: 135px;
+    
+    margin-left: 35px;
+    text-align: center;
+}
+.img-card{
+    width: 106px;
+    height: 106px;
+
+}
+.card-container {
+    align-items: center;
+    margin: 12px;
+    width: 954px;
+    margin-left: 35px;
+}
+/***** DIV CON CARDS LISTO!
+
+    SIGUIENTE BLOQUE DE LISTA DESORDENADA.*****/
+
+.div-list{
+    padding: 30px;
+    padding-left: 79px;
+}
+h3{
+    font-size: 24px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 10px;
+}
+ul li{
+    margin: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/********** parte de las listas terminada******************/
+
+/***********ABOUT US***********/
+
+.img-about{
+    height: 100px;
+    width: 221px;
+}
+.section-about{
+    width: 896px;
+    padding: 2px;
+    height: 300px;
+}
+.section-about p {
+    color: black;
+    width: 563px;
+    display: inline-block;
+    font-size: 23px;
+}
+
+#container-about {
+    width: 953px;
+    height: 365px;
+    margin-left: 35px;
+    background-color: #E9E9E9;
+    padding: 30px;
+    padding-bottom: 54px;
+    border-radius: 40px;
+    box-shadow: 1px 6px 19px;
+}
+#img-1{
+    width: 225px;
+    height: 115px;
+    float:left ;
+}
+#img-2{
+    float: right;
+    margin-top: 37px;
+    height: 123px;
+}
+.parrafo{
+    display: inline-block;
+}
+#text-about{
+padding-left: 225px;
+color: rgb(6, 6, 6);
+width: 436px;
+}
+#tittle-about-us {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    margin-left: 33px;
+    margin-bottom: 10px;
+    
+}
+
+.subtittle-about {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 29px;
+    margin-bottom: 11px;
+}
+
+
+/*************************************
+        TERMINADO EL ABOUT US
+**************************************/
+
+
+#div-form {
+    width: 831px;
+    height: 445px;
+    display: block;
+    padding: 37px;
+    border-radius: 10px;
+    margin-left: 97px;
+    margin-top: 80px;
+}
+
+.label-form{
+    display: block;
+    font-size: 22px
+}
+#div-form input {
+    width: 331px;
+    height: 42px;
+    margin-bottom: 37px;
+    margin-top: 13px;
+}
+#txt-a-form{
+    width: 429px;
+    height: 243px;
+}
+.form-1 , .form-2 {
+    
+    vertical-align:top;
+}
+.form-1{
+    width: 350px;
+}
+.form-2{
+    width: 480px;
+}
+#div-form section {
+    display: inline-block;
+}
+#btn-form {
+    background-color: #AACE9B;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+#tittle-inf{
+    border: solid 5.px black
+}
+#tittle-form{
+    font-size: 25px;
+    font-style: bold;
+    border-bottom: 2px solid black;
+}
+#seleccion {
+    width: 322px;
+    height: 32px;
+}
+/**** contenido previo al footer****/
+#more-info{
+    background-color: #49A37B;
+    width: 1728px;
+    height: 269px;
+}
+.contenido-final{
+    padding-left: 395px;
+    
+}
+.end-list{
+    
+    border-right: solid black;
+    width: 249px;
+    height: 239px;
+    border-right: 3px solid black;
+    margin: 10px 50px;
+}
+.end-list p{
+    font-size: 25px;
+    margin-left: 13px;
+    
+}
+.end-list li{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*******sECCION FINAL TERMINADA!
+    AHORA A POR EL FOOTER************/
+footer{ text-align: center;
+
+}
+.icon-footer{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.secc-footer-2{
+    display: block;
+    
+}
+.p1{
+    font-size: 25px;
+    color: #49A37B;
+    margin-bottom: 5px;
+}
+footer p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#menu-desp button {
+    width: 327px;
+    height: 47px;
+    color: white;
+    background-color: #49A37B;
+    border-radius: 10px;
+    margin-top: 292px;
+    margin-left: 29px;
+}
