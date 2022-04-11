@@ -7,16 +7,13 @@
 .container_nav{
     background-color: rgb(19, 157, 118);
     display: flex;
-    border: solid yellow .5px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-
-
 .div_sign_in {
+    width: 40%;
     border: solid black;
-    width: 210px;
     display: flex;
     justify-content: space-between;
 }
@@ -39,9 +36,7 @@
     .container_nav input {
         display: none;
     }
-    #container_menu{
-        display: none;
-    }
+   
 }
 
 
