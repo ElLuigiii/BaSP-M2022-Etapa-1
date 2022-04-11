@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
 </head>
@@ -28,52 +29,117 @@
         </nav>
     </header>
     <main>
-    
-        <div>
-            <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="Logo">
-            <h1>Trackgenix</h1>
-            <h2>Data managment</h2>
-            <!--Imagen Principal de presentacion-->
-            <img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png"
-                alt="Img Ppal">
+            <!--DIV CON MENU DESPLEGABLE-->
+    <div id="container_menu"> 
+        <section>
+            <ul>
+                <li>
+                    <label>
+                        <a href="#">Menu</a>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <a href="#">History</a>
+                </label>
+                </li>
+                <li>
+                    <label>
+                        <a href="">About Us</a>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <a href="#">Contact Form</a>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <a href="#">Sources</a>
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <label>Contact Us</label>
             <p>
-                <b>Presentation of the company: A nice message about us that you find very attractive,
-                    friendly that gives you confidence to stay on the site.
-                    Presentation of the company: A nice message about us that you find very attractive,
-                    friendlym that gives you confidence to stay on the site.
-                </b>
+                Sed varius enim lorem ullamcorper dolore aliquam aenean
+                ornare velit lacus, ac varius enim
+                lorem ullamcorper dolore. Proin sed ailquam facilisis ante interdum.
+                Sed nulla amet lorem feugiat tempus aliquam.
             </p>
+        </section>
+        <section>
+            <!--icono mensaje-->
+            <p>✉trackgenix@info.com</p>
+            <!--icono de direccion-->
+            <p>⌂ 1234 Somwhere Road #8254</p>
+            <p>Nashville, TN 00000-0000</p>
+        </section>
+        <button>Get system information</button>
+    </div>
+    <!--FIN DEL DIV DE MENU DESPLEGABLE-->
+    
+        <div id="container_ppal">
+            <div class="tittle_main">
+                <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="Logo" height="80px">
+                <div class="div_tittle">
+                    <h1>Trackgenix</h1>
+                    <h2>Data managment</h2>
+                </div>
+            <!--Imagen Principal de presentacion-->
+            </div>
+            <div class="container_img">
+                <img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png"
+                alt="Img Ppal" id="img_ppal">
+            <p id="txt_img">
+                Presentation of the company: A nice message about us that you find very attractive,
+                friendly that gives you confidence to stay on the site.
+                Presentation of the company: A nice message about us that you find very attractive,
+                friendlym that gives you confidence to stay on the site.
+            </p>
+            </div>
         </div>
-        <div>
+        <div id="container_cards">
             <!--Contenedor de imagenes pequeñas luego de la principal-->
             <!--Img 1-->
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU"
-                alt="Simplycity">
-            <p>
-                Simplycity
-            </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU"
-                alt="Eficiency">
+            <section class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU"
+                alt="Simplycity" class="img_card">
+                <p>
+                    Simplycity
+                </p>
+            </section>
+            <section class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU"
+                alt="Eficiency" class="img_card">
             <p>
                 Eficiency
             </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU"
-                alt="Tracking">
-            <p>
-                Tracking
-            </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU"
-                alt="Confidence">
+            </section>
+            <section class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU"
+                alt="Tracking" class="img_card">
+                <p>
+                    Tracking
+                </p>
+            </section>
+            <section class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU"
+                alt="Confidence" class="img_card">
             <p>
                 Confidence
             </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU"
-                alt="Managment">
-            <p>
-                Managment
-            </p>
+            </section>
+            <section class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU"
+                alt="Managment" class="img_card">
+                <p>
+                    Managment
+                </p>
+            </section>
         </div>
-        <div>
+        <div class="container_info">
             <!--Informacion adicional-->
             <section>
                 <h4>What can Trackgenix do for you?</h4>
@@ -94,7 +160,7 @@
                 </ul>
             </section>
         </div>
-        <div>
+        <div class="container_about">
             <!--div contenedor de About Us-->
             <section>
                 <h3>
@@ -104,7 +170,7 @@
                     Confidentiality Agreements
                 </p>
                 <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png"
-                    alt="About us">
+                    alt="About us" height="100px">
             </section>
             <section>
                 <p>
@@ -236,55 +302,6 @@
             </p>
         </section>
     </footer>
-    <!--DIV CON MENU DESPLEGABLE-->
-    <div>
-        <section>
-            <ul>
-                <li>
-                    <labeñ>
-                        <a href="#">Menu</a>
-                </label>
-                </li>
-                <li>
-                    <labeñ>
-                        <a href="#">History</a>
-                </label>
-                </li>
-                <li>
-                    <label>
-                        <a href="">About Us</a>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <a href="#">Contact Form</a>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <a href="#">Sources</a>
-                    </label>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <label>Contact Us</label>
-            <p>
-                Sed varius enim lorem ullamcorper dolore aliquam aenean
-                ornare velit lacus, ac varius enim
-                lorem ullamcorper dolore. Proin sed ailquam facilisis ante interdum.
-                Sed nulla amet lorem feugiat tempus aliquam.
-            </p>
-        </section>
-        <section>
-            <!--icono mensaje-->
-            <p>✉trackgenix@info.com</p>
-            <!--icono de direccion-->
-            <p>⌂ 1234 Somwhere Road #8254</p>
-            <p>Nashville, TN 00000-0000</p>
-        </section>
-        <button>Get system information</button>
-    </div>
-    <!--FIN DEL DIV DE MENU DESPLEGABLE-->
+
 </body>
 </html>
