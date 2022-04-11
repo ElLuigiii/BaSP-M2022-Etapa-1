@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_nav{
+    background-color: rgb(19, 157, 118);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.div_sign_in {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.container_nav button {
+    height: 23px;
+    width: 90px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 24px;
+    font-weight: bold;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .btn_tutorial{
+        display: none;
+    }
+    .container_nav input {
+        display: none;
+    }
+}
+@media screen and (min-width: 480px) and (max-width:780px){
+    #icon_nav{
+        display: none;
+    }  
+}
+@media screen and (min-width: 780px) and (max-width:1024px){
+    #icon_nav{
+        display: none;
+    }
+}
+
+
+
