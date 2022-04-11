@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
 </head>
@@ -15,17 +16,19 @@
         <nav class="container_nav">
             <img src="https://img.myloview.es/cuadros/hamburger-menu-icon-menu-icon-in-trendy-flat-style-i[…]esign-app-logo-ui-vector-illustration-eps10-400-198409260.jpg"
                 alt="main" height="30px">
-            <a href="#">Tutorials</a> 
-            <a href="#">Contact</a>
-            
-
+            <div class="btn_tutorial">
+                <a href="#">Tutorials</a> 
+                <a href="#">Contact</a>
+            </div>
             <input type="search" name="#" id="#">
-            
             <section class="div_sign_in">
                 <button>Login</button>
                 <button>SignUp</button>
             </section>
-            <p>🔎</p>
+            <div id="icon_nav">
+                <p >🔎</p>
+            </div>
+            
         </nav>
     </header>
     <main>
@@ -101,8 +104,6 @@
             </div>
         </div>
         <div id="container_cards">
-            <!--Contenedor de imagenes pequeñas luego de la principal-->
-            <!--Img 1-->
             <section class="card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU"
                 alt="Simplycity" class="img_card">
@@ -162,35 +163,38 @@
         </div>
         <div class="container_about">
             <!--div contenedor de About Us-->
-            <section>
+            <section class="about_tittle">
                 <h3>
                     About Us
                 </h3>
                 <p>
                     Confidentiality Agreements
                 </p>
-                <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png"
-                    alt="About us" height="100px">
             </section>
-            <section>
+                
+            <section class="about_info">
+                <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png"
+                alt="About us" class="about_tittle_img">
+            
+            
                 <p>
                     Lorem ipsum dolor sit accumsan interdum nisi, quis tincindunt felis sagittis eget.
                     Tempus eusimond. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
                     accumsan eu faucibus.
                 </p>
-                <section>
-                    <p>
-                        Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget.
-                        Tempus eusimod. Vestibukum ante ipsum primis in faucibus vestibulum. Blandit
-                        adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                    </p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU"
-                        alt="About two">
-                </section>
+            </section>
+            <section class="about_info">
+                <p>
+                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget.
+                Tempus eusimod. Vestibukum ante ipsum primis in faucibus vestibulum. Blandit
+                adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                </p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU"
+                alt="About two" class="about_tittle_img">
             </section>
         </div>
         <!--DIV C/FORMULARIO DE CONTACTO-->
-        <div>
+        <div id="div_form">
             <form action="#">
                 <h3>Get system information</h3>
                 <label for="input-name">
@@ -217,7 +221,7 @@
                 <input type="submit" value="Send">
             </form>
         </div>
-        <div>
+        <div id="container_end">
             <section>
                 <h3>
                     Products
