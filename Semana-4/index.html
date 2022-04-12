@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
 </head>
@@ -15,7 +19,7 @@
     <header>
         <nav class="container_nav">
             <img src="https://img.myloview.es/cuadros/hamburger-menu-icon-menu-icon-in-trendy-flat-style-i[…]esign-app-logo-ui-vector-illustration-eps10-400-198409260.jpg"
-                alt="main" height="30px">
+                alt="main"height="30px" id="burguer">
             <div class="btn_tutorial">
                 <a href="#">Tutorials</a> 
                 <a href="#">Contact</a>
@@ -103,63 +107,65 @@
             </p>
             </div>
         </div>
-        <div id="container_cards">
-            <section class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU"
-                alt="Simplycity" class="img_card">
+        <div class="container_magic">
+            <div id="container_cards">
+                <section class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU"
+                    alt="Simplycity" class="img_card">
+                    <p>
+                        Simplycity
+                    </p>
+                </section>
+                <section class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU"
+                    alt="Eficiency" class="img_card">
                 <p>
-                    Simplycity
+                    Eficiency
                 </p>
-            </section>
-            <section class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU"
-                alt="Eficiency" class="img_card">
-            <p>
-                Eficiency
-            </p>
-            </section>
-            <section class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU"
-                alt="Tracking" class="img_card">
+                </section>
+                <section class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU"
+                    alt="Tracking" class="img_card">
+                    <p>
+                        Tracking
+                    </p>
+                </section>
+                <section class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU"
+                    alt="Confidence" class="img_card">
                 <p>
-                    Tracking
+                    Confidence
                 </p>
-            </section>
-            <section class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU"
-                alt="Confidence" class="img_card">
-            <p>
-                Confidence
-            </p>
-            </section>
-            <section class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU"
-                alt="Managment" class="img_card">
-                <p>
-                    Managment
-                </p>
-            </section>
-        </div>
-        <div class="container_info">
-            <!--Informacion adicional-->
-            <section>
-                <h4>What can Trackgenix do for you?</h4>
-                <ul>
-                    <li>Time Registration</li>
-                    <li>Reports</li>
-                    <li>Resources managements</li>
-                    <li>Asign multiple roles</li>
-                </ul>
-            </section>
-            <section>
-                <h4>Why choose Trackgenix is a quiality leap?</h4>
-                <ul id="list_dsor">
-                    <li>Increase productivity</li>
-                    <li>Optimize leadership and team management</li>
-                    <li>Facilitate to work traceability</li>
-                    <li>Improve decision making</li>
-                </ul>
-            </section>
+                </section>
+                <section class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU"
+                    alt="Managment" class="img_card">
+                    <p>
+                        Managment
+                    </p>
+                </section>
+            </div>
+            <div class="container_info">
+                <!--Informacion adicional-->
+                <section>
+                    <h4>What can Trackgenix do for you?</h4>
+                    <ul>
+                        <li>Time Registration</li>
+                        <li>Reports</li>
+                        <li>Resources managements</li>
+                        <li>Asign multiple roles</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Why choose Trackgenix is a quiality leap?</h4>
+                    <ul>
+                        <li>Increase productivity</li>
+                        <li>Optimize leadership and team management</li>
+                        <li>Facilitate to work traceability</li>
+                        <li>Improve decision making</li>
+                    </ul>
+                </section>
+            </div>
         </div>
         <div class="container_about">
             <!--div contenedor de About Us-->
