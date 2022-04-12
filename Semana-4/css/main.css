@@ -1,3 +1,12 @@
+*{  margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#burguer{
+    height: 30px;
+    background-color: rgb(6, 6, 6);
+}
+
 #container_ppal{
     display: flex;
     justify-content: center;
@@ -5,9 +14,9 @@
 }
 .tittle_main{
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     height: 100px;
+    margin-top: 25px;
     
 }
 .tittle_main h1{
@@ -37,11 +46,12 @@
 }
 #container_cards section {
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 14%;
     align-items: center;
     text-align: center;
-    padding: 2px;
+    box-shadow: 0px 4px 4px 0px;
 }
+
 .card {
     border: solid grey 0.5px;
     display: flex;
@@ -50,14 +60,13 @@
 .card p{
     margin-top: 5px
 }
-.container_info{
-    display: flex;
+.container_info {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .container_info ul{
-    list-style: none
+    list-style: none;
+    margin: 5%;
 }
 
 .container_about {
@@ -67,14 +76,13 @@
     flex-direction: column;
     margin: auto;
     width: 90%;
-    border: solid black 0.5px;
+    box-shadow: 0px 4px 4px 0px;
     border-radius: 35px;
     padding: 10px;
 }
 .about_tittle {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 8px;
 }
 .about_tittle_img{
@@ -84,6 +92,9 @@
 .about_info{
     display: flex;
     flex-direction: row;
+}
+.about_info p{
+    font-size: 15px;
 }
 
 #container_end{
@@ -99,18 +110,22 @@
     flex-direction: column;
     flex-grow: 1;
 }
+#container_end li{
+    color: white;
+    border-left: solid black;
+}
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     #container_menu{
         display: none;
     }
+    
     .img_card {
-        height: 71px;
-        width: 71px;
-        margin-left: 1px;
-        padding: 2px;
+        width: 101px;
+        height: 79px;
+        margin-left: 0px;
+        padding: 0px;
         border: solid grey 0.5px;
-        box-shadow: -1px 7px 9px;
     } 
     #list_dsor {
     margin-left: 10%;
@@ -120,33 +135,31 @@
     #div_form{
         display: none
     }  
-    .about_tittle_img{
-        height: 100px;
-        width: 90px;
+    .about_tittle_img {
+        height: 72px;
+        width: 140px;
+    }
+    #container_info ul{
+        margin: 5%;
+    }
+    .about_tittle p{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 30px;
+        font-weight: bold;
     }
 }
 
-@media screen and (min-width: 481px){
-    
-    #container_menu{
+
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #div_form{
         display: none;
     }
-    .container_img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        text-align: center;
-    }
-
-}
-
-@media screen and (min-width: 480px) and (max-width:780px){
     .tittle_main{
         justify-content: start;
-        padding: 25px;
-    }
-    .container_img{
         padding: 25px;
     }
     .card{
@@ -158,4 +171,54 @@
         width: 100px;
         height: 90px;
     }
+    #container_menu{
+        display: none;
+    }
+    .container_img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+    } 
+    #container_card section{
+        height: 28vw;
+    }
+    #container_cards{
+        width: 50%;
+    }
+    .container_magic{
+        display: flex;
+    }
+    .container_info {
+        width: 53%;
+        padding-top: 6%;
+        order: -1;
+        font-size: 24px;
+        display: flex;
+        text-align: start;
+    }
+    .container_about {
+        
+        background-color: #80808057;
+        width: 90%;
+        border-radius: 35px;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .about_tittle_img {
+        width: 180px;
+        height: 88px;
+    }
+    #txt_img{
+        font-size: 19px;
+        margin-left: 2%;
+
+    }
+    #container_info ul{
+        margin: 2%;
+    }
+}
+@media screen and (min-width: 1024px){
+
 }
