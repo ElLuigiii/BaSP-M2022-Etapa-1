@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/asside.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -21,7 +22,7 @@
             <img src="https://img.myloview.es/cuadros/hamburger-menu-icon-menu-icon-in-trendy-flat-style-i[…]esign-app-logo-ui-vector-illustration-eps10-400-198409260.jpg"
                 alt="main"height="30px" id="burguer">
             <div class="btn_tutorial">
-                <a href="#">Tutorials</a> 
+                <a href="#" id="btn_border">Tutorials</a> 
                 <a href="#">Contact</a>
             </div>
             <input type="search" name="#" id="input_nav">
@@ -36,7 +37,8 @@
         </nav>
     </header>
     <main>
-            <!--DIV CON MENU DESPLEGABLE-->
+    <div class="div_gigante">
+        <!--DIV CON MENU DESPLEGABLE-->
         <section class="secc_1">
             <div id="menu-desp">
                 <section class="main-1">
@@ -92,7 +94,7 @@
                 <div class="tittle_main">
                     <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="Logo" height="80px">
                     <div class="div_tittle">
-                        <h1>Trackgenix</h1>
+                        <h1><b>Trackgenix</b></h1>
                         <h2>Data managment</h2>
                     </div>
                 <!--Imagen Principal de presentacion-->
@@ -201,9 +203,12 @@
                 </section>
             </div>
             <!--DIV C/FORMULARIO DE CONTACTO-->
-            <div id="div_form">
-                <form action="#">
+            <div class="form_container_big">
+                <div class="form_tittle">
                     <h3>Get system information</h3>
+                </div>
+                <form class="form_container">
+                    
                     <section class="form_1">
                         <label for="input-name">
                             Name
@@ -232,67 +237,70 @@
                     </section>
                 </form>
             </div>
-            <div id="container_end">
-                <section>
-                    <h3>
-                        Products
-                    </h3>
-                    <ul>
-                        <li>
-                            Funcionalities
-                        </li>
-                        <li>
-                            Download
-                        </li>
-                        <li>
-                            Integration
-                        </li>
-                        <li>
-                            Extras
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>
-                        Company
-                    </h3>
-                    <ul>
-                        <li>
-                            Information
-                        </li>
-                        <li>
-                            Clients
-                        </li>
-                        <li>
-                            Resources
-                        </li>
-                        <li>
-                            Blog
-                        </li>
-                    </ul>
-                </section>
-    
-                <section>
-                    <h3>
-                        Support
-                    </h3>
-                    <ul>
-                        <li>
-                            Help
-                        </li>
-                        <li>
-                            Tutorials
-                        </li>
-                        <li>
-                            API
-                        </li>
-                        <li>
-                            Contact
-                        </li>
-                    </ul>
-                </section>
-            </div>
+            
         </section>
+
+    </div>
+    <div id="container_end">
+            <section>
+                <h3 class="tittle_end">
+                    Products
+                </h3>
+                <ul>
+                    <li>
+                        Funcionalities
+                    </li>
+                    <li>
+                        Download
+                    </li>
+                    <li>
+                        Integration
+                    </li>
+                    <li>
+                        Extras
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="tittle_end">
+                    Company
+                </h3>
+                <ul>
+                    <li>
+                        Information
+                    </li>
+                    <li>
+                        Clients
+                    </li>
+                    <li>
+                        Resources
+                    </li>
+                    <li>
+                        Blog
+                    </li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>
+                    Support
+                </h3 class="tittle_end">
+                <ul>
+                    <li>
+                        Help
+                    </li>
+                    <li>
+                        Tutorials
+                    </li>
+                    <li>
+                        API
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </section>
+    </div>
     </main>
     <footer>
         <section>
@@ -321,3 +329,4 @@
 
 </body>
 </html>
+
