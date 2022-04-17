@@ -1,12 +1,10 @@
-#menu-desp{
-    background: linear-gradient(180deg, rgba(0,178,140,1) 0%, rgba(76,189,157,1) 73%, rgba(225,243,239,1) 100%);
+#menu-desp {
+    background: linear-gradient(180deg, rgb(80 167 128) 0%, rgba(76,189,157,1) 73%, rgba(225,243,239,1) 100%);
     width: 448px;
     height: 1909px;
-    
-    justify-content:  center;
+    justify-content: center;
 }
 .main-1 {
-    
     height: 400px;
     width: 70%;
     margin-left: 30px;
