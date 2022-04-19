@@ -25,12 +25,9 @@ console.log('Reply to excercises 2e) '+ "'" + newDate + "'")
 var wordLarge= "supercalifagilisticoexpialidoso y hakunamatata ♫♬♪♩"
 var firstVar= wordLarge.substring(0,1).toUpperCase()
 var secondVar= wordLarge.substring(33,34).toUpperCase()
-var uppercase1= wordLarge.indexOf("s")
-var uppercase2=wordLarge.indexOf("h")
 uppercase2=wordLarge.substring(34,35).toUpperCase()
-uppercase1=wordLarge.substring(0,1).toUpperCase
 var secondSection= wordLarge.substring(1,34)
 var threeSection= wordLarge.substring(36, wordLarge.length)
-var completa= uppercase1 + secondSection + uppercase2 + threeSection
+var completa= firstVar + secondSection + uppercase2 + threeSection
 console.log(completa)
 /////////////////Excercises 2 finished
