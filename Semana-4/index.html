@@ -84,7 +84,7 @@
                     <p>⌂ 1234 Somwhere Road #8254</p>
                     <p>Nashville, TN 00000-0000</p>
                 </section>
-                <button>Get system information</button>
+                <button id="button_menu">Get system information</button>
         </div>
         </section>
         <!--FIN DEL DIV DE MENU DESPLEGABLE-->
@@ -204,21 +204,21 @@
             </div>
             <!--DIV C/FORMULARIO DE CONTACTO-->
             <div class="form_container_big">
-                <div class="form_tittle">
+                <div id="tittle_form">
                     <h3>Get system information</h3>
                 </div>
                 <form class="form_container">
                     
                     <section class="form_1">
-                        <label for="input-name">
+                        <label for="input-name" class="label-form">
                             Name
                         </label>
                         <input type="text" placeholder="Write yout name">
-                        <label for="e-mail">
+                        <label for="e-mail" class="label-form">
                             E-mail
                         </label>
                         <input type="text" placeholder="Write your E-mail">
-                        <label for="seleccion">
+                        <label for="seleccion" class="label-form">
                             Select contact area:
                         </label>
                         <select id="selecccion">
@@ -231,9 +231,9 @@
                         </select>
                     </section>
                     <section class="form_2">
-                        <textarea name="mesagge" id="#" cols="20" rows="20">Write your message
+                        <textarea name="mesagge" id="txt-a-form" cols="10" rows="10" class="txt_area">Write your message
                         </textarea>
-                        <input type="submit" value="Send">
+                        <input type="submit" id="btn-form" value="Send">
                     </section>
                 </form>
             </div>
