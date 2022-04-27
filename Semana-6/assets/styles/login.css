@@ -1,0 +1,91 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.container_Form_log {
+    display: flex;
+    justify-content: center;
+    height: 800;
+    width: 350px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.tittle_main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0px;
+}
+
+#img_ppal{
+    width: 80%;
+}
+
+.div_tittle h1 {
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+}
+.div_tittle h2 {
+    font-size: 25px;
+    font-weight:bolder;
+    text-align: center;
+    margin-left: 5px;
+}
+    /****************************************** TEXTO TITULOS *****************************/
+#container_ppal{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#button_form{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(76, 117, 76);
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.div_Form{
+    padding-left: 55px;
+}
+
+
+.text_alert{
+        color: red;
+        visibility: hidden;
+        display: flex;
+        margin-bottom: 5px;
+        margin-top: 10px;
+}
+.label_form_login input{
+    width: 80%;
+}
+.input_login{
+    display: flex;
+    padding-left: 5px;;
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.input_red{
+    border: solid .5px red
+}
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* media query*/
+@media screen  and (min-width: 1024px){
+    /* .input_login{
+        width: 450px;
+    } */
+
+}
