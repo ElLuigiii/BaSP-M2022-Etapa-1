@@ -41,7 +41,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    margin-bottom: 100px;}
 #button_form{
     width: 40%;
     height: 30px;
