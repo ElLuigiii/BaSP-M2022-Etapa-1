@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/styles/header.css"><!--Linkeado-->
     <link rel="stylesheet" href="../assets/styles/footer.css"><!--Linkeado-->
     <link rel="stylesheet" href="../assets/styles/sing-up.css">
+    <script src="../javascript/employee-singup.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
             <input type="search" name="#" id="input_nav">
             <section class="div_sign_in">
                 <button>
-                    <a href="/views/index.html">
+                    <a href="../views/index.html">
                         Home
                     </a>
                 </button>
@@ -58,60 +59,60 @@
                     <label for="#">
                         Name:
                     </label>
-                    <input type="text" placeholder="Write your name" name="" id="">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your name"  id="input_Name">
+                    <p class="error_msj" id="errorMens">Ingrese correctamente la información</p>
                     <label for="#">
                         Last Name:
                     </label>
-                    <input type="text" placeholder="Write your last name" value="">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your last name" value="" id="input_Last_Name">
+                    <p class="error_msj" id="msjError1">Ingrese correctamente la información</p>
                     <label for="#">
                         Document:
                     </label>
-                    <input type="text" placeholder="Write your document number">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your document number" id="input_Dni">
+                    <p class="error_msj" id="error_2">Ingrese correctamente la información</p>
                     <label for="#">
                         Date of Birth:
                     </label>
-                    <input type="datetime">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="datetime" id="input_Birthday">
+                    <p class="error_msj" id="msjError3">Ingrese correctamente la información</p>
                     <label for="#">
                         Phone Number:
                     </label>
-                    <input type="text">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" id="input_Phone_Num">
+                    <p class="error_msj" id="msjError4" >Ingrese correctamente la información</p>
                     <label for="#">
                         Direction
                     </label>
-                    <input type="text" placeholder="Write your direction" name="" id="">
+                    <input type="text" placeholder="Write your direction" name="" id="input_Adress">
                     <p class="error_msj">Ingrese correctamente la información</p>
                 </section>
                 <section class="secc_Form">
                     <label for="#">
                         Location:
                     </label>
-                    <input type="text" placeholder="Write your location">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your location" id="input_Location">
+                    <p class="error_msj" id="msjError6">Ingrese correctamente la información</p>
                     <label for="#">
                         Postal Code:
                     </label>
-                    <input type="text" placeholder="Write your postal code">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your postal code" id="input_Postal">
+                    <p class="error_msj" id="msjError7">Ingrese correctamente la información</p>
                     <label for="#">
                         Email:
                     </label>
-                    <input type="text" placeholder="Write your email">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="text" placeholder="Write your email" id="input_Email">
+                    <p class="error_msj" id="error_Msj8">Ingrese correctamente la información</p>
                     <label for="#">
                         Password:
                     </label>
-                    <input type="password" placeholder="Write your password">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="password" placeholder="Write your password" id="input_Pwd">
+                    <p class="error_msj" id="msjError9">Ingrese correctamente la información</p>
                     <label for="#">
                         Repeat password
                     </label>
-                    <input type="password">
-                    <p class="error_msj">Ingrese correctamente la información</p>
+                    <input type="password" id="input_Pswrd_2">
+                    <p class="error_msj" id="msjError0">Ingrese correctamente la información</p>
                     <button type="submit" id="btn_form">Sign up</button>   
                 </section>
             </div>
