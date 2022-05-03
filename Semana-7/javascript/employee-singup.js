@@ -11,30 +11,46 @@ function validateEmail(input){
 }
 function validatePassword(string){
     var letters=false;
-   var numbers=false;
-   for (var i = 0; i < string.length; i++) {
-   var element = string[i];  
-    if (isNaN(element)==true) {
-    letters=true;
-        }
-        if(isNaN(element)==false){
+    var numbers=false;
+    for (var i = 0; i < string.length; i++) {
+        var element = string[i];  
+        if (isNaN(element)==true) {
+        letters=true;
+        }if(isNaN(element)==false){
         numbers=true;
         }   
-    }
-   return letters && numbers;
+    }return letters && numbers;
 }
-
+function validateBirth(string) {
+    var validateDate = false;
+    if (string.length == 10) {
+        if (string[2] == '/' && string[5] == '/') {
+            var todayDate = new Date();
+            var birthDate = new Date(string.substring(6), string.substring(3, 5) - 1, string.substring(0, 2));
+            validateDate = todayDate > birthDate;
+        } 
+    }
+    return validateDate
+}
 window.onload = function (){
     var input_Name= document.getElementById('input_Name')
     var errorMsje=document.getElementById('errorMens')
+    var userName= ''
+    var userLastName= ''
+    var userDni=''  
+    var userDateBirth=''
+    var userPhone=''
+    var userPwd= ''
+    var userEmail=''
+    var userPostal=''
+    var userLocation=''
+    //aca va el user location
+    var userAdress=''
 
-    function validateName(inputName){
-        var userName= ''
+    function validateName(){
+        
         if(input_Name.value.length>3 && isNaN(input_Name.value) && !validatePassword(input_Name.value)){
-            var userName= input_Name.value
-            var apto= true
-            console.log(userName)
-            return userName
+            return userName=input_Name.value
         }if(input_Name.value.length==0){
             input_Name.classList.remove('input_red')
             errorMsje.style.visibility= "hidden"
@@ -52,11 +68,10 @@ window.onload = function (){
     
     var inputLastName= document.getElementById('input_Last_Name')
     var msjError1= document.getElementById('msjError1')
+    
     function validateLastName(){
-        var userLast= ''
         if(isNaN(inputLastName.value) && !validatePassword(inputLastName.value) && inputLastName.value.length>3){
-            var userLast= inputLastName.value
-            return userLast
+            return userLastName= inputLastName.value
         }if(inputLastName.value.length==0){
             inputLastName.classList.remove('input_red')
             msjError1.style.visibility= "hidden"
@@ -75,11 +90,10 @@ window.onload = function (){
     var inputDni= document.getElementById('input_Dni')
     var msjError2=document.getElementById('error_2')
     document.getElementById('errorMsj2')
+    
     function validateNumbers(){
-        var userDni=''
         if (inputDni.value.length>=3  && !isNaN(inputDni.value)){
-            var userDni= inputDni.value
-            return userDni
+            return userDni= inputDni.value
         }if(inputDni.value.length==0){
             inputDni.classList.remove('input_red')
             msjError2.style.visibility= "hidden"
@@ -98,13 +112,39 @@ window.onload = function (){
     /******************
      ACA VA LA FUNCION DE FECHA
      *************************/
+    var inputDate= document.getElementById('input_Date')
+    var msjError3= document.getElementById('msjError3')
+    function blurToDate(){
+        
+    if(validateBirth(inputDate.value) && inputDate.value.length==10 ){
+        return userDateBirth = inputDate.value
+    }if(inputDate.value== 0 ){ 
+        msjError3.style.visibility= 'hidden'
+        inputDate.classList.remove('input_red')
+    }else {
+        inputDate.classList.add('input_red')
+        msjError3.style.visibility= 'visible'
+    }
+    }
+    function focusDate(){
+        msjError3.style.visibility= "hidden"
+        inputDate.classList.remove('input_red')
+    }
+    inputDate.addEventListener('blur', blurToDate)
+    inputDate.addEventListener('focus', focusDate)
+    /* (validateEmail(inputEmail.value)==true){
+            console.log('emailCorrecto')
+            var userEmail=inputEmail.value
+            return userEmail*/ 
+
+
     var inputPhone= document.getElementById('input_Phone_Num')
     var msjError4=document.getElementById('msjError4')
+    
     function toPhone(){
-        var userPhone=''
+        
         if (!isNaN(inputPhone.value) && inputPhone.value.length>=10){
-            var userPhone= inputPhone.value
-            return userPhone
+            return userPhone= inputPhone.value
         }if(inputPhone.value.length==0){
             inputPhone.classList.remove('input_red')
             msjError4.style.visibility= "hidden"
@@ -123,14 +163,34 @@ window.onload = function (){
     inputPhone.addEventListener('focus', focusToPhone)
     
     //ahora direccion numeros y caracteres separados por un espacio
-    /*aca eld e direccion*/
+    /*aca el de direccion*/
+    var inputAdress= document.getElementById('input_Adress')
+    var msjError5= document.getElementById('msjError5')
+    
+    function blurToAdress(){
+        if (inputAdress.value.length>5 && validatePassword(inputAdress.value)){
+            return userAdress= inputAdress.value
+        }if (inputAdress.value.length==0){
+            inputAdress.classList.remove('input_red')
+            msjError5.style.visibility= "hidden"
+        }else { 
+            inputAdress.classList.add('input_red')
+            msjError5.style.visibility="visible"
+        }
+    }
+    function focusToAdress(){
+        inputAdress.classList.remove('input_red')
+        msjError5.style.visibility="hidden"
+    }
+    inputAdress.addEventListener('blur', blurToAdress)
+    inputAdress.addEventListener('focus', focusToAdress)
+//29031122
     var inputLocation=document.getElementById('input_Location')
     var msjError6=document.getElementById('msjError6')
-    function location(input_Location){
-        var userLocation=''
+    
+    function location(){
         if(inputLocation.value.length>=3){
-            var userLocation=inputLocation.value
-            return userLocation
+            return userLocation=inputLocation.value
         }if(inputLocation.value.length==0){
             inputLocation.classList.remove('input_red')
             msjError6.style.visibility= "hidden"
@@ -150,12 +210,10 @@ window.onload = function (){
 
     var inputPostal= document.getElementById('input_Postal')
     var msjError7=document.getElementById('msjError7')
+    
     function postalCode(){
-        var userPostal=''
         if(!isNaN(inputPostal.value) && inputPostal.value.length>4 && inputPostal.value.length<6){
-            var userPostal=inputPostal.value
-            console.log(userPostal)   
-            return userPostal
+            return userPostal=inputPostal.value
         }if(inputLocation.value.length==0){
             inputPostal.classList.remove('input_red')
             msjError7.style.visibility= "hidden"
@@ -175,11 +233,8 @@ window.onload = function (){
     var inputEmail=document.getElementById('input_Email')
     var msjError8=document.getElementById('error_Msj8')
     function confirmEmail(){
-        var userEmail=''
         if(validateEmail(inputEmail.value)==true){
-            console.log('emailCorrecto')
-            var userEmail=inputEmail.value
-            return userEmail
+            return userEmail=inputEmail.value
         }if(inputEmail.value.length==0){
             inputEmail.classList.remove('input_red')
             msjError8.style.visibility= "hidden"
@@ -199,13 +254,9 @@ window.onload = function (){
     var msjError9=document.getElementById('msjError9')
     
     function confirmPwd(){
-        var userPwd=''
         if(validatePassword(inputPwd.value)==true && inputPwd.value==inputPwd2.value && inputPwd.value.length>=8){
-            var userPwd=inputPwd.value
-            console.log('salio')
-            return userPwd
+            return userPwd=inputPwd.value
         }if(inputPwd2.value.length==0){
-            console.log('por aca seria')
             inputPwd2.classList.remove('input_red')
             msjError9.style.visibility= "hidden"
         }else{
@@ -217,8 +268,9 @@ window.onload = function (){
 
     }
     function securityPwd(){
+        
         if (validatePassword(inputPwd.value)&& inputPwd.value.length>=8){
-            console.log('vas bien')
+            return  userPwd=inputPwd.value
         }if(inputPwd.value.length==0){
             inputPwd.classList.remove('input_red')
             msjError9.style.visibility= "hidden"
@@ -227,6 +279,7 @@ window.onload = function (){
             inputPwd.classList.add('input_red')
         }
     }
+ 
     function focusPwd(){
         inputPwd.classList.remove('input_red')
         msjError9.style.visibility="hidden"
@@ -236,6 +289,7 @@ window.onload = function (){
 
     var inputPwd2=document.getElementById('input_Pswrd_2')
     var msjError0=document.getElementById('msjError0')
+    
     function focusPwd2(){
             inputPwd2.classList.remove('input_red')
             msjError0.style.visibility="hidden"
@@ -243,7 +297,18 @@ window.onload = function (){
     inputPwd2.addEventListener('blur', confirmPwd)
     inputPwd2.addEventListener('focus', focusPwd2)
     
-
+    function validationToInputs(event){
+        event.preventDefault()
+        if(validateName(userName.value) && validateLastName(userLastName.value) 
+        && validateNumbers(userDni.value) && validateBirth(inputDate.value)
+        && toPhone(userPhone.value) && blurToAdress(userAdress.value) && location(inputLocation.value) 
+        && postalCode(inputPostal.value) && confirmEmail(inputEmail.value) && confirmPwd(inputPwd.value)){
+            return true, console.log('salio bien'), console.log(userDateBirth)
+        }else console.log('esta que sale'), alert('terminalo papa')
+    }
+console.log(userName)
+var boton=document.getElementById('btn_form')
+boton.addEventListener('click', validationToInputs)
 
 }
 
