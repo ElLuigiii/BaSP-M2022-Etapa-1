@@ -1,10 +1,3 @@
-function countWord (string, numbers){
-    var minumLetter= false
-    if(string.length>=numbers){
-    minumLetter=true
-    }return minumLetter
-}
-
 function validateEmail(input){
     var regExpEmail = /[a-z0-9]+@+[a-z]+.+[a-z]{2,3}/;
     return regExpEmail.test(input);
@@ -29,8 +22,7 @@ function validateBirth(string) {
             var birthDate = new Date(string.substring(6), string.substring(3, 5) - 1, string.substring(0, 2));
             validateDate = todayDate > birthDate;
         } 
-    }
-    return validateDate
+    }return validateDate
 }
 window.onload = function (){
     var input_Name= document.getElementById('input_Name')
@@ -109,9 +101,6 @@ window.onload = function (){
     inputDni.addEventListener('blur', validateNumbers)
     inputDni.addEventListener('focus', blurDni)
 
-    /******************
-     ACA VA LA FUNCION DE FECHA
-     *************************/
     var inputDate= document.getElementById('input_Date')
     var msjError3= document.getElementById('msjError3')
     function blurToDate(){
@@ -132,12 +121,7 @@ window.onload = function (){
     }
     inputDate.addEventListener('blur', blurToDate)
     inputDate.addEventListener('focus', focusDate)
-    /* (validateEmail(inputEmail.value)==true){
-            console.log('emailCorrecto')
-            var userEmail=inputEmail.value
-            return userEmail*/ 
-
-
+    
     var inputPhone= document.getElementById('input_Phone_Num')
     var msjError4=document.getElementById('msjError4')
     
@@ -162,8 +146,6 @@ window.onload = function (){
     inputPhone.addEventListener('blur', toPhone)
     inputPhone.addEventListener('focus', focusToPhone)
     
-    //ahora direccion numeros y caracteres separados por un espacio
-    /*aca el de direccion*/
     var inputAdress= document.getElementById('input_Adress')
     var msjError5= document.getElementById('msjError5')
     
@@ -184,7 +166,6 @@ window.onload = function (){
     }
     inputAdress.addEventListener('blur', blurToAdress)
     inputAdress.addEventListener('focus', focusToAdress)
-//29031122
     var inputLocation=document.getElementById('input_Location')
     var msjError6=document.getElementById('msjError6')
     
@@ -296,19 +277,54 @@ window.onload = function (){
             }   
     inputPwd2.addEventListener('blur', confirmPwd)
     inputPwd2.addEventListener('focus', focusPwd2)
-    
-    function validationToInputs(event){
-        event.preventDefault()
-        if(validateName(userName.value) && validateLastName(userLastName.value) 
+
+    function validationToInputs(){
+         
+        // if( validateName(userName.value)==true && validateLastName(userLastName.value)==true
+        // && validateNumbers(userDni.value)==true && validateBirth(inputDate.value)==true
+        // && toPhone(userPhone.value)==true && blurToAdress(userAdress.value)==true && location(inputLocation.value)==true 
+        // && postalCode(inputPostal.value)==true && confirmEmail(inputEmail.value)==true && confirmPwd(inputPwd.value)==true ){
+        if(validateName(userName.value) && validateLastName(userLastName.value)
         && validateNumbers(userDni.value) && validateBirth(inputDate.value)
-        && toPhone(userPhone.value) && blurToAdress(userAdress.value) && location(inputLocation.value) 
+        && toPhone(userPhone.value) && blurToAdress(userAdress.value) && location(inputLocation.value)
         && postalCode(inputPostal.value) && confirmEmail(inputEmail.value) && confirmPwd(inputPwd.value)){
-            return true, console.log('salio bien'), console.log(userDateBirth)
-        }else console.log('esta que sale'), alert('terminalo papa')
+        
+         return userName && userLastName && userDni && userDateBirth && userPhone && userAdress && userLocation && userPostal && userEmail && userPwd
+        }else {
+            alert('faltan campos por llenar')
+        }
+        
+    
     }
-console.log(userName)
+    function requestToServer(){
+        if(validationToInputs()){
+            //aca va el fetch
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?'+
+            'name=' + userName + 
+            '&lastName=' + userLastName + 
+            '&email=' + userEmail + 
+            '&password=' + userPwd + 
+            '&dni=' + userDni + 
+            '&dob=' + userDateBirth + 
+            '&phone=' + userPhone + 
+            '&adress=' + userAdress + 
+            '&city=' + userLocation + 
+            '&zip=' + userPostal)
+            .then (function (response){
+                return response.json()
+            })
+            .then(function (data){
+                if(data.succes== true){
+                    console.log ('vas bien')
+                    console.log(data)
+                } 
+            }).catch( function(error){
+                alert(error.msg)
+            })
+        }else alert('campos incompletos')
+    }
 var boton=document.getElementById('btn_form')
-boton.addEventListener('click', validationToInputs)
+boton.addEventListener('click', requestToServer )
 
 }
 

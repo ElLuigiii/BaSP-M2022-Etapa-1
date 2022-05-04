@@ -72,6 +72,11 @@
     height: 10%;
     background-color: green;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
 }
 @media screen and (max-width: 1024px){
     #separador {
