@@ -150,7 +150,7 @@ window.onload = function (){
     var msjError5= document.getElementById('msjError5')
     
     function blurToAdress(){
-        if (inputAdress.value.length>5 && validatePassword(inputAdress.value)){
+        if (inputAdress.value.length>=5 ){
             return userAdress= inputAdress.value
         }if (inputAdress.value.length==0){
             inputAdress.classList.remove('input_red')
@@ -307,19 +307,28 @@ window.onload = function (){
             '&dni=' + userDni + 
             '&dob=' + userDateBirth + 
             '&phone=' + userPhone + 
-            '&adress=' + userAdress + 
+            '&address=' + userAdress + 
             '&city=' + userLocation + 
             '&zip=' + userPostal)
             .then (function (response){
                 return response.json()
             })
             .then(function (data){
-                if(data.succes== true){
-                    console.log ('vas bien')
-                    console.log(data)
-                } 
+                data.succes== true
+                    alert('Employed created \n' +
+                    'Name : ' + userName +  ' \n' +
+                    'Last name: ' + userLastName + ' \n' + 
+                    'Document: ' + userDni + ' \n' +
+                    'Date of birth: ' + userDateBirth + ' \n' + 
+                    'Phone number ' + userPhone + ' \n' + 
+                    'Address: ' + userAdress + ' \n' + 
+                    'Location: ' + userLocation + ' \n' + 
+                    'Postal code: ' + userPostal + ' \n' + 
+                    'Email: ' + userEmail + ' \n' +
+                    'Password: ' + userPwd)
+                
             }).catch( function(error){
-                alert(error.msg)
+                alert('algo no va bien')
             })
         }else alert('campos incompletos')
     }
